@@ -36,6 +36,27 @@ data:
       password: changeme
     query:
       static-files: /go/jaeger-ui/
+      ui-config: /conf/ui.json
+  ui: |-
+    {
+      "gaTrackingID": " UA-000000-2",
+      "menu": [
+        {
+          "label": "About Jaeger",
+          "items": [
+            {
+              "label": "GitHub",
+              "url": "https://github.com/jaegertracing/jaeger"
+            },
+            {
+              "label": "Docs",
+              "url": "http://jaeger.readthedocs.io/en/latest/"
+            }
+          ]
+        }
+      ],
+      "dependenciesMenuEnabled": false
+    }
   agent: |
     collector:
       host-port: "jaeger-collector:14267"

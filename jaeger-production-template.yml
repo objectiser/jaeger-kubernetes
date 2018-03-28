@@ -146,6 +146,8 @@ items:
               items:
                 - key: query
                   path: query.yaml
+                - key: ui
+                  path: ui.json
             name: jaeger-configuration-volume
 - apiVersion: v1
   kind: Service
